@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-28T18:57:30 IST" name="Default suite" finished-at="2024-03-28T18:58:38 IST" duration-ms="68183">
+    <groups>
+    </groups>
+    <test started-at="2024-03-28T18:57:30 IST" name="Default test" finished-at="2024-03-28T18:58:38 IST" duration-ms="68183">
+      <class name="retailer.tests.test1">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:retailer.tests.test1@71d44a3]" started-at="2024-03-28T18:57:30 IST" name="launchApplication" finished-at="2024-03-28T18:57:42 IST" duration-ms="12502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="approvedOrder()[pri:0, instance:retailer.tests.test1@71d44a3]" started-at="2024-03-28T18:57:42 IST" name="approvedOrder" finished-at="2024-03-28T18:58:38 IST" duration-ms="55632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approvedOrder -->
+      </class> <!-- retailer.tests.test1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
