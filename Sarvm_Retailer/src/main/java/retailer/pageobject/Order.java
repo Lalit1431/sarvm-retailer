@@ -62,6 +62,13 @@ public class Order extends AbstractComponent{
 	WebElement pck;
 	@FindBy(xpath="//span[text()='Pickup']")
 	WebElement pickupbtn;
+	@FindBy(xpath="(//div[@class='orderDetails'])[1]//ion-button[text()='Reject']")
+	WebElement rejectbtn;
+	@FindBy(xpath="(//div[@class='orderDetails'])[1]//p[@class='orderId']")
+	WebElement orderid;
+	
+	@FindBy(xpath="//ion-label[text()='History']")
+	WebElement orderhistory;
 	
 	public boolean verifynewtabselected() throws InterruptedException {
 		 Thread.sleep(5000);
@@ -159,7 +166,29 @@ public class Order extends AbstractComponent{
 	    driver.switchTo().activeElement();
 	    yes.click();
 	}
+	
+	public void rejectorder() {
+		rejectbtn.click();
+		driver.switchTo().activeElement();
+		yes.click();
+		
 	}
+	public String getorderid() {
+		String text = orderid.getText();
+		int colonIndex = text.indexOf(":"); // Find the index of colon
+		String orderidtext = text.substring(colonIndex + 2);
+		return orderidtext;
+	}
+
+	public OrderHistory navigatetoOrderhistory() {
+		orderhistory.click();
+		OrderHistory history=new OrderHistory(driver);
+		return history;
+	}
+	
+	
+	
+}
 
 
 

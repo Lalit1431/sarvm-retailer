@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="retailer.tests.test1">
+      <class name="retailer.tests.profileValidiation">
         <methods>
-          <include name="approvedOrder"/>
+          <include name="closeapplication"/>
+          <include name="editProfile"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- retailer.tests.test1 -->
+      </class> <!-- retailer.tests.profileValidiation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
